@@ -1,0 +1,17 @@
+可信计算方案的一个重要环节就是对系统平台进行完整性度量
+从系统启动开始，对BIOS、grub、kernel以及操作系统启动后的应用程序等均需进行度量
+
+/*
+BIOS:保存着计算机最重要的基本输入输出的程序、开机后自检程序和系统自启动程序，它可从CMOS中读写系统设置的具体信息。 其主要功能是为计算机提供最底层的、最直接的硬件设置和控制。
+grub:是一个来自GNU项目的多操作系统启动程序
+kernel:是指大多数操作系统的核心部分，它由操作系统中用于管理存储器、文件、外设和系统资源的那些部分组成。操作系统内核通常运行进程，并提供进程间的通信。
+*/
+
+TPM中使用PCR（Platform Configure Register）对度量结果进行记录
+
+/*
+可信平台模块（英语：Trusted Platform Module，缩写：TPM）是一项安全密码处理器（英语：Secure cryptoprocessor）的国际标准：
+可信计算平台具有三个可信根，分别是可信度量根（Root of Trust for Measurement，RTM）、可信存储根（Root of Trust for Storage，RTS）和可信报告根（Root of Trust for Reporting，
+RTR），支持可信度量、可信存储和可信报告三个核心功能。
+*/
+
